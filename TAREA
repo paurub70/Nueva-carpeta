@@ -1,0 +1,18 @@
+CREATE TABLE products (product_id INT PRIMARY KEY, product_name VARCHAR (150), price DECIMAL(10,2),stock INT)
+
+INSERT INTO products ( product_id,product_name,price,stock) VALUES 
+(1,'laptop pro',1200.00,50),
+(2,'mouse gamer',75.50,150),
+(3,'teclado mecanico',150.99,100);
+
+ALTER TABLE Customers ADD COLUMN email VARCHAR (150);
+
+INSERT INTO Customers ( first_name, last_name,email) VALUES
+
+( 'laura ', 'rodriguez ', 'laurarodrigu7z@gmail.com '),
+( 'maria ', 'lopez ', 'marilop3z@gmail.com '),
+( 'luisa ', 'marin ', 'luisamarin12@gmail.com ');
+
+SELECT *
+ FROM customers 
+ WHERE country = 'MEXICO';
